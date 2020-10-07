@@ -1,0 +1,12 @@
+@extends('adminPanel.layouts.app')
+@section('title')
+    Home
+@endsection
+@php
+    $nav_title='Home';
+    $activedash='active';
+@endphp
+@section('content')
+@include('adminPanel.home.number')
+@include('adminPanel.home.videos')
+@endsection

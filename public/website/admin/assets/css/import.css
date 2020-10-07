@@ -1,0 +1,21 @@
+.btn-group>.btn:not(:first-child), .btn-group>.btn-group:not(:first-child) {
+     margin-left:5px !important;
+}
+
+.dataTables_processing
+
+{
+    display: block;
+    color: white;
+    padding: 9px;
+    text-align: center;
+}
+td{
+    color:white !important
+}
+.pagination .page-item .page-link{
+    color: white !important;
+}
+.show{
+    transform: translate3d(0px, 0, 0px) !important;
+}
