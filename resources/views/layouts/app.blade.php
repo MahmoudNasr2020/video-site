@@ -3,7 +3,7 @@
 <head>
     <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1713/PNG/512/iconfinder-videologoplayicon-3993847_112649.png">
     @include('layouts.style.css.css')
-    <title>موقع مقارنة اديان
+    <title>قسم مقارنة الاديان
         @yield('title')
     </title>
 
