@@ -14,18 +14,16 @@ class adminLoginController extends Controller
         return view('adminPanel.auth.home');
     }
 
-    public function login(loginRequest $request){
+    public function login(loginRequest $request)
+    {
 
         $remember_me = $request->has('remember_me') ? true : false;
 
-        if(Auth::guard('admin')->attempt(['email'=>$request->input('email'),'password'=>$request->input('password')]))
-        {
-                return redirect()->route('admin.home');
+        if (Auth::guard('admin')->attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
+            return redirect()->route('admin.home');
         }
 
-            return redirect()->back()->with('error','هناك خطأ في البيانات');
-
-
+        return redirect()->back()->with('error', 'هناك خطأ في البيانات');
     }
 
     public function logout()

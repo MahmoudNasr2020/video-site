@@ -17,12 +17,11 @@ class Authenticate extends Middleware
      */
     protected function redirectTo($request)
     {
-        if (! $request->expectsJson()) {
-            if(FacadesRequest::is('admin/*')){
+        if (!$request->expectsJson()) {
+            if (FacadesRequest::is('admin/*')) {
 
-                 return route('admin.login.home');
-            }
-            else{
+                return route('admin.login.home');
+            } else {
 
                 return route('login');
             }
